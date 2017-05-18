@@ -1,5 +1,6 @@
 import Head from 'next/head'
-
+import Favicon from 'react-favicon'
+import ReactBKKLogo from '../resources/reactbkk.svg'
 const ga = `
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,6 +25,7 @@ export default function MainLayout ({ children }) {
           content='https://reactbkk.github.io/2.0.0/static/og-image.jpg'
         />
         <script dangerouslySetInnerHTML={{ __html: ga }} />
+        <Favicon url={ReactBKKLogo} />
       </Head>
       <style global jsx>{`
         @font-face {
